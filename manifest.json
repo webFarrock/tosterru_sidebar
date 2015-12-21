@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Toster.ru Расширенное меню.",
+    "version": "1.0.0",
+    "description": "Добавляет в сайдбар ряд ссылок, такие как Мои ответы, подписки.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [ "https://toster.ru/*" ],
+            "js": [ "script.js" ],
+            "run_at": "document_end"
+        }
+    ]
+
+}
